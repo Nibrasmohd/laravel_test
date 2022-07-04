@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+.form-conatiner{
+    margin-top: 50px;
+}
+.login_form,.qus_form{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* admin section */
+
+#admin_section,#user_section{
+   height: 100vh;
+   width: 100%;
+   background: rgb(238,174,202);
+   background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(236,243,245,1) 26%);
+}
+#admin_section header,#user_section header{
+    height: 80px;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px;
+    margin-top: 10px;
+    border-radius: 15px;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(2,5,17);
+    background: linear-gradient(0deg, rgba(2,5,17,1) 0%, rgba(121,119,115,1) 100%);
+}
+#col-wrap{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+    padding: 30px;
+    padding-top: 10px;
+
+}
+.left-col{
+    padding: 20px;
+    border-radius: 10px;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+.left-col ul li{
+    margin-top: 15px;
+    color: white;
+    background: rgba(0, 0, 0, .6);
+    border-radius: 7px;
+}
+.left-col ul li .nav-link{
+    color: lightgray;
+}
+.left-col ul li .nav-link:hover{
+    color: white;
+}
+.right-col{
+    background-color: red;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+.qus_form{
+    background-color: #fff;
+    overflow: auto;
+}
+#alertmssg{
+    position: absolute;
+    top: 100px;
+    left: 65%;
+    transform: translateX(-65%);
+    width: 50%;
+    z-index: 999;
+}
